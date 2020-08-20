@@ -8,6 +8,12 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import static java.lang.Thread.sleep;
 
@@ -15,43 +21,39 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        TextView textView;
+        ImageView logo;
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        //SET ANIMATICON
+
+        Animation animacion1= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_arriba);
+        Animation animacion2= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_abajo);
+        textView = (TextView)findViewById(R.id.logoTextView);
+        logo = (ImageView) findViewById(R.id.logoImageView);
+
+        textView.setAnimation(animacion2);
+        logo.setAnimation(animacion1);
+       new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, inicioSesionActivity.class);
+
+                startActivity(intent);
+                finish();
+
+            }
+        }, 400);
+
 
         try {
             sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-/*
-        setTheme(R.style.AppTheme);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-
-        int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET);
-
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.INTERNET)
-                != PackageManager.PERMISSION_GRANTED) {
-
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.INTERNET)) {
-
-            } else {
-
-                ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.INTERNET}, 1);
-
-            }
-        }
-
-*/
-        Intent intent = new Intent(this, inicioSesionActivity.class);
-
-        startActivity(intent);
-        this.finish();
 
     }
 }

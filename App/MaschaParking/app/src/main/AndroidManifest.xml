@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
+        <activity android:name=".FragmentsCliente.ClienteReservaActivity"></activity>
         <activity
             android:name=".UserAdminActivity"
             android:label="@string/title_activity_user_admin"
@@ -62,9 +62,10 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -16,19 +16,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        try {
-            sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-/*
-        setTheme(R.style.AppTheme);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
 
         int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET);
 
@@ -47,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-*/
+
         Intent intent = new Intent(this, inicioSesionActivity.class);
 
         startActivity(intent);

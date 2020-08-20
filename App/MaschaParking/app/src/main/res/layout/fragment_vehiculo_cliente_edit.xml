@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsCliente.VehiculoClienteEditFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5mm">
+
+            <TextView
+                style="@style/texto"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="Modificar Vehículo" />
+
+
+            <EditText
+
+                style="@style/txt"
+                android:id="@+id/TxtVehiEditPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+
+                android:hint="Placa del vehículo"
+                android:inputType="text"
+                android:maxLength="7"
+                android:gravity="center"
+                />
+
+
+            <EditText
+                android:id="@+id/TxtVehiEditColor"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Color del vehículo"
+                android:inputType="text"
+                android:gravity="center"
+
+                />
+
+
+            <EditText
+                android:id="@+id/TxtVehiEditMarca"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Marca del vehículo"
+                android:inputType="text"
+                android:gravity="center"
+                />
+
+
+            <EditText
+                android:id="@+id/TxtVehiEditTipo"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+
+                android:hint="Tipo de Vehículo"
+                android:inputType="text"
+                android:maxLength="20"
+                android:gravity="center"
+                />
+
+
+
+
+            <Button
+
+                android:background="@drawable/designbtnline"
+                android:id="@+id/BtnVehiEditSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Guardar" />
+
+            <Button
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/desingbtnrelleno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

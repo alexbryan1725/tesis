@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1mm"
+        android:layout_marginLeft="1mm"
+        android:layout_marginRight="1mm"
+
+        android:background="@drawable/designbtnline">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_margin="1mm"
+                android:layout_width="5mm"
+                android:layout_height="5mm"
+                android:src="@drawable/iconmap"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.3mm"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/nombreViewCP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.1mm"
+                    android:text="Nombre "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+
+                    android:id="@+id/plazaViewCP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.1mm"
+                    android:text="Plaza "
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                style="@style/texto"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/preciovireCP"
+                android:text="Precio"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+
+                android:layout_width="5mm"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_navigate_next"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

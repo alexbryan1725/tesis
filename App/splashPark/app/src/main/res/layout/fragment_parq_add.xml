@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ParqAddFragment"
+    android:id="@+id/frameAddParq">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2mm">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:text="Información General"/>
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+
+                android:id="@+id/TxtParqEditRuc"
+                android:drawableLeft="@drawable/ic_credit_card"
+                android:hint="Ruc"
+                android:inputType="number"
+
+
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+
+                android:id="@+id/TxtParqInsertNom"
+                android:drawableLeft="@drawable/ic_local_parking_black"
+                android:hint="Nombre de Parqueadero"
+                android:inputType="text"
+
+
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+
+                android:id="@+id/TxtParqInsertTel"
+                android:drawableLeft="@drawable/ic_phone"
+                android:hint="Teléfono"
+                android:inputType="number"
+
+
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+
+                android:id="@+id/TxtParqInsertEmail"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+                android:drawableLeft="@drawable/ic_confirmation_number"
+                android:id="@+id/TxtParqInsertPlaza"
+
+                android:hint="Número de Estacionamientos"
+                android:inputType="number"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+
+                android:id="@+id/TxtParqInsertPrecioFrac"
+                android:drawableLeft="@drawable/ic_icons_bolsa_de_dinero"
+                android:hint="Precio de hora fracción "
+                android:inputType="numberDecimal"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableTint="@color/iconEditTexColor"
+                android:drawableLeft="@drawable/ic_icons_direc"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+
+                android:id="@+id/TxtParqInsertDir"
+                android:hint="Dirección" />
+
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:text="Información de Autollenado"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:gravity="center_vertical|center_horizontal|fill_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+
+                android:drawableTint="@color/iconEditTexColor"
+                android:drawableLeft="@drawable/ic_icons_longitud"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+
+                android:id="@+id/LblParqInsertLong"
+                android:hint="Longitud" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+
+                android:drawableTint="@color/iconEditTexColor"
+                android:drawableLeft="@drawable/ic_icons_latitud_"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor"
+                android:id="@+id/LblParqInsertLati"
+
+                android:hint="Latitud" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/desingbtnrelleno"
+                        android:id="@+id/btnParqNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Obtnener Ubicacion "
+                        android:drawableTop="@drawable/ic_icons_direccion"/>
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/desingbtnrelleno"
+                        android:id="@+id/btnParqMaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ver mapa"
+                        android:drawableTop="@drawable/ic_map"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+                <Button
+                    android:layout_marginTop="35dp"
+                    android:id="@+id/BtnParqSave"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar"
+                    android:drawableLeft="@drawable/ic_save"/>
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="Cancelar"
+                    android:drawableLeft="@drawable/ic_cancel"/>
+            </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</FrameLayout>

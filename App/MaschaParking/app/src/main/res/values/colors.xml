@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#40AEB6</color>
+    <color name="colorPrimaryDark">#18939C</color>
+    <color name="colorAccent">#53929B</color>
+    <color name="ColorBackGround">#09000000</color>
+    <color name="colorBtnRelleno">#ED008577</color>
+    <color name="colorBtnStoke">#008577</color>
+    <color name="ColorIconEditText">#00949E</color>
+    <color name="ColorEditText">#183048</color>
+    <color name="ColorEditStoke">#40AEB6</color>
+    <color name="ColorTitleProgress">#18939C</color>
+    <color name="ColorProgressStroke">#00008577</color>
+    <color name="ColorTransparente">#CEFFFFFF</color>
+    <color name="ColorGold">#F6E234</color>
+    <color name="Transparente">#00FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLabels">#183048</color>
+
+</resources>

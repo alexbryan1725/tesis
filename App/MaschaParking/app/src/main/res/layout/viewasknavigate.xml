@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/designcontentprogress"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/designtitleprogress">
+
+        <TextView
+
+
+            android:id="@+id/ViewNavigateNombre"
+            style="@style/progresTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:text="Información General"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_marginTop="3dp"
+
+            android:id="@+id/ViewAskCancel"
+            android:drawableTint="@android:color/white"
+            android:background="@color/Transparente"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/ic_cancel_black_24dp"
+
+            android:fontFamily="@font/gothicbolditalic"
+            android:textColor="@color/colorLabels"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+       >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/progresInfo"
+                android:fontFamily="@font/gothicbold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nombre : "
+
+                />
+
+            <TextView
+                android:id="@+id/ViewAskNombre"
+                style="@style/progresInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=" Cargando..."
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/progresInfo"
+                android:fontFamily="@font/gothicbold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dirección : " />
+
+            <TextView
+                android:id="@+id/ViewAskDir"
+                style="@style/progresInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="  Cargando..." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/progresInfo"
+                android:fontFamily="@font/gothicbold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Plaza : " />
+
+            <TextView
+                android:id="@+id/ViewAskPlaza"
+
+                style="@style/progresInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="  Cargando..." />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+
+                style="@style/progresInfo"
+                android:fontFamily="@font/gothicbold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Teléfono : " />
+
+            <TextView
+                android:id="@+id/ViewAskTel"
+                style="@style/progresInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text=" Cargando..." />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:tint="@color/ColorGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icons_bolsa_de_dinero"/>
+
+            <TextView
+                android:id="@+id/ViewAskPrecio"
+                android:textColor="@android:color/holo_green_light"
+                style="@style/texto"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$0.25"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+
+
+            style="@style/progresInfo"
+            android:fontFamily="@font/gothicbold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="Correo : " />
+
+        <TextView
+            android:id="@+id/ViewAskCorreo"
+            style="@style/progresInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=" Cargando..." />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/ViewAskFav"
+             android:fontFamily="@font/gothicbolditalic"
+             android:layout_marginRight="15dp"
+             android:background="@color/Transparente"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawableTop="@drawable/ic_star_black_24dp"
+             android:text="Favoritos"
+             android:textColor="@color/colorLabels"
+             />
+
+        <Button
+            android:id="@+id/ViewAskReservar"
+            android:fontFamily="@font/gothicbolditalic"
+            android:drawableTint="@android:color/holo_green_light"
+            android:layout_marginRight="10dp"
+            android:background="@color/Transparente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_navigation_black_24dp"
+            android:text="Reservar e ir"
+            android:textColor="@color/colorLabels"
+            />
+        <Button
+            android:id="@+id/ViewAskGo"
+            android:fontFamily="@font/gothicbolditalic"
+            android:drawableTint="@android:color/holo_green_light"
+
+            android:background="@color/Transparente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_navigation_black_24dp"
+            android:text="Ir"
+            android:textColor="@color/colorLabels"
+            >
+
+        </Button>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

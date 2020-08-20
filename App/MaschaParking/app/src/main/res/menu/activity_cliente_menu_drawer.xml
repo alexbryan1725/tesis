@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicioClie"
+            android:icon="@drawable/ic_home_black"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_lista"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Buscar Parqueadero" />
+
+        <item
+            android:id="@+id/nav_favoritosClie"
+            android:icon="@drawable/pointfavorito"
+            android:title="MP Favoritos"/>
+
+        <item
+            android:id="@+id/nav_vechiculosClie"
+            android:icon="@drawable/ic_car_black_24dp"
+            android:title="Mis Vehículos"/>
+
+        <item
+            android:id="@+id/nav_transaccionesClie"
+            android:icon="@drawable/ic_icons_bolsa_de_dinero"
+            android:title="Pagos realizados"/>
+
+        <item
+            android:id="@+id/nav_reservasClie"
+            android:icon="@drawable/ic_icons_bolsa_de_dinero"
+            android:title="Reservaciones"/>
+
+
+
+
+    </group>
+
+    <item android:title="Cuenta"
+        >
+        <menu>
+            <group android:checkableBehavior="single"
+                >
+                <item
+                    android:iconTint="@color/ColorIconEditText"
+                    android:id="@+id/nav_ConfigClie"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:title="Configuracion" />
+
+                <item
+                    android:iconTint="@color/ColorIconEditText"
+                    android:id="@+id/nav_CloseClie"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:title="Cerrar Sesión" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

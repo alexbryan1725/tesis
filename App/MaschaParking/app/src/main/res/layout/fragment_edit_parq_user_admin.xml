@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsUserAdmin.EditParqUserAdminFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2mm">
+
+            <TextView
+                style="@style/texto"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:text="Editar Información General"/>
+
+            <EditText
+
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/TxtUserAdminEditRuc"
+                android:drawableLeft="@drawable/ic_credit_card"
+                android:hint="Ruc"
+                android:inputType="number"
+
+
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+
+                style="@style/txt"
+
+
+                android:id="@+id/TxtUserAdminEditNom"
+                android:drawableLeft="@drawable/ic_icons_estacionamiento"
+                android:hint="Nombre de Parqueadero"
+                android:inputType="text"
+
+
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+
+
+                style="@style/txt"
+
+
+                android:id="@+id/TxtUserAdminEditTel"
+                android:drawableLeft="@drawable/ic_phone"
+                android:hint="Teléfono"
+                android:inputType="number"
+
+
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+
+                android:id="@+id/TxtUserAdminEditEmail"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+                android:drawableLeft="@drawable/ic_confirmation_number"
+                android:id="@+id/TxtUserAdminEditPlaza"
+
+                android:hint="Número de Estacionamientos"
+                android:inputType="number"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+
+                android:id="@+id/TxtUserAdminEditPrecioFrac"
+                android:drawableLeft="@drawable/ic_icons_bolsa_de_dinero"
+                android:hint="Precio de hora fracción "
+                android:inputType="numberDecimal"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                style="@style/txt"
+
+                android:id="@+id/TxtUserAdminEditDir"
+                android:hint="Dirección" />
+
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:text="Información de Autollenado"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:gravity="center_vertical|center_horizontal|fill_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext"
+
+                        android:drawableLeft="@drawable/ic_icons_longitud"
+                        style="@style/txt"
+
+                        android:id="@+id/LblUserAdminEditLong"
+                        android:hint="Longitud" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+
+                        style="@style/txt"
+
+                        android:drawableLeft="@drawable/ic_icons_latitud_"
+                        android:gravity="center_vertical"
+
+
+                        android:id="@+id/LblUserAdminEditLati"
+
+                        android:hint="Latitud" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/desingbtnrelleno"
+                        android:id="@+id/btnUserAdminNowEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Obtnener"
+                        android:drawableTop="@drawable/ic_icons_direccion"/>
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/desingbtnrelleno"
+                        android:id="@+id/btnUserAdminEditMaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ver mapa"
+                        android:drawableTop="@drawable/ic_map_black"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:background="@drawable/designbtnline"
+                android:layout_marginTop="35dp"
+                android:id="@+id/BtnUserAdminEdit"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Modificar Valores"
+                />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:background="@drawable/desingbtnrelleno"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                />
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>

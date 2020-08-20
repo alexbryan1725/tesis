@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AdminEditFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5mm">
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+                android:drawableLeft="@drawable/ic_credit_card"
+                android:id="@+id/TxtAdminEditCed"
+                android:hint="Cédula"
+                android:inputType="number"
+                android:maxLength="10"
+                />
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+                android:inputType="text"
+                android:id="@+id/TxtAdminEditNombres"
+
+
+                android:drawableLeft="@drawable/ic_person"
+
+
+                android:hint="Nombres"/>
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+                android:inputType="text"
+                android:id="@+id/TxtAdminEditApellidos"
+
+                android:drawableLeft="@drawable/ic_person"
+
+
+                android:hint="Apellidos"/>
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+                android:inputType="number"
+                android:maxLength="10"
+                android:id="@+id/TxtAdminEditTelefono"
+
+                android:drawableLeft="@drawable/ic_phone"
+
+                android:hint="Teléfono"/>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+                android:inputType="text"
+                android:id="@+id/TxtAdminEditdir"
+
+                android:drawableLeft="@drawable/ic_email"
+
+
+                android:hint="Dirección"/>
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+                android:inputType="textEmailAddress"
+                android:id="@+id/TxtAdminEditCorreo"
+
+                android:drawableLeft="@drawable/ic_email"
+
+
+                android:hint="E-mail"/>
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                style="@style/txt"
+
+                android:inputType="textPassword"
+                android:id="@+id/TxtAdminEditPswd"
+
+                android:drawableLeft="@drawable/ic_credit_card"
+
+                android:hint="Contraseña (Opcional)"/>
+
+
+
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2mm">
+
+
+
+                <Switch
+
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    style="@style/txt"
+                    android:inputType="text"
+                    android:id="@+id/SwitchAdminEditHab"
+                    android:text="Hablilitado"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:layout_marginTop="50dp"
+                android:id="@+id/BtnEditarSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

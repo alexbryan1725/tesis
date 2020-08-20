@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1mm"
+        android:layout_marginLeft="1mm"
+        android:layout_marginRight="1mm"
+
+        android:background="@drawable/designbtnline">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_margin="1.5mm"
+                android:layout_width="10mm"
+                android:layout_height="10mm"
+                android:src="@drawable/designbtnline"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_margin="1mm"
+            android:layout_width="30mm"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.3mm"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/AdminListId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.1mm"
+                android:text="id " />
+
+            <TextView
+                android:id="@+id/AdminListCed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.1mm"
+                android:text="Cédula " />
+
+            <TextView
+                android:id="@+id/AdminListNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.1mm"
+                android:text="Nombre " />
+
+            <TextView
+                android:id="@+id/adminListTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.1mm"
+                android:text="Teléfono " />
+
+            <TextView
+                android:id="@+id/adminListEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.1mm"
+                android:text="E-mail " />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|right">
+
+            <ImageView
+                android:layout_margin="2mm"
+                android:layout_width="5mm"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu_camera"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

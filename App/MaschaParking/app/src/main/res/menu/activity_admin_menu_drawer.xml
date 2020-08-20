@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+
+        >
+
+
+        <item
+
+            android:iconTint="@color/ColorIconEditText"
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home_black"
+            android:title="Inicio"
+            />
+
+
+        <item
+            android:iconTint="@color/ColorIconEditText"
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_person"
+            android:title="Administradores"/>
+
+        <item
+            android:iconTint="@color/ColorIconEditText"
+            android:id="@+id/nav_parq"
+            android:icon="@drawable/ic_icons_estacionamiento"
+            android:title="Parqueaderos"/>
+
+
+        <item
+            android:iconTint="@color/ColorIconEditText"
+            android:id="@+id/nav_prop"
+            android:icon="@drawable/ic_person"
+            android:title="Propietario"/>
+
+    </group>
+    <item android:title="Cuenta"
+        >
+        <menu>
+            <group android:checkableBehavior="single"
+                >
+            <item
+                android:iconTint="@color/ColorIconEditText"
+                android:id="@+id/nav_Config"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Configuracion" />
+
+            <item
+                android:iconTint="@color/ColorIconEditText"
+                android:id="@+id/nav_Close"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Cerrar Sesión" />
+            </group>
+        </menu>
+    </item>
+
+
+
+
+</menu>

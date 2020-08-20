@@ -1,0 +1,13 @@
+cd C:\Program Files\Android\Android Studio\jre\bin 
+
+
+keytool -importkeystore -srckeystore D:\Tesis\Key\UtcMashca.jks -destkeystore D:\Tesis\Key\UtcMashca.jks -deststoretype pkcs12
+
+keytool -list -v -keystore D:\Tesis\Key \UtcMashca.jks -alias UTC
+
+
+06:63:3D:48:E3:6B:C4:F8:02:C9:CD:58:47:25:72:97:77:D8:4D:0B
+
+UTC
+
+2020UTC

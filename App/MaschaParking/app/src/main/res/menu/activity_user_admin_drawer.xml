@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicioUserAdmin"
+            android:icon="@drawable/ic_home_black"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_cobradorUserAdmin"
+            android:icon="@drawable/pointfavorito"
+            android:title="Trabajadores"/>
+
+        <item
+            android:id="@+id/nav_parqUserAdmin"
+            android:icon="@drawable/ic_icons_estacionamiento"
+            android:title="Mi Parqueadero"/>
+
+    </group>
+
+    <item android:title="Cuenta"
+        >
+        <menu>
+            <group android:checkableBehavior="single"
+                >
+                <item
+                    android:iconTint="@color/ColorIconEditText"
+                    android:id="@+id/nav_ConfigUserAdmin"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:title="Configuracion" />
+
+                <item
+                    android:iconTint="@color/ColorIconEditText"
+                    android:id="@+id/nav_CloseUserAdmin"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:title="Cerrar Sesión" />
+            </group>
+        </menu>
+    </item>
+</menu>

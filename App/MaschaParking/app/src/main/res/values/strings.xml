@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mascha Parking</string>
+    <string name="title_activity_admin_menu">AdminMenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps_add_parq">Map</string>
+    <string name="title_activity_maps_cliente">Map</string>
+    <string name="title_activity_cliente_menu">ClienteMenuActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_user_admin">UserAdminActivity</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AdminAddFragment"
+    android:background="@color/ColorBackGround">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5mm">
+
+            <TextView
+                style="@style/texto"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="Nuevo Administrador" />
+
+
+            <EditText
+
+                style="@style/txt"
+                android:id="@+id/TxtAdminInsertCed"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_credit_card"
+                android:hint="Cédula"
+                android:inputType="number"
+                android:maxLength="10"
+
+                />
+
+
+            <EditText
+                android:id="@+id/TxtAdminInsertNombres"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_person"
+                android:hint="Nombres"
+android:inputType="text"
+
+                />
+
+
+            <EditText
+                android:id="@+id/TxtAdminInsertApellidos"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+
+                android:drawableLeft="@drawable/ic_person"
+
+                android:hint="Apellidos"
+                android:inputType="text"
+
+                />
+
+
+            <EditText
+                android:id="@+id/TxtAdminInsertTelefono"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:hint="Teléfono"
+                android:inputType="number"
+                android:maxLength="10"
+
+                />
+
+
+            <EditText
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/TxtAdminInsertdirec"
+                android:drawableLeft="@drawable/ic_person"
+                android:hint="Dirección"
+                android:inputType="text"
+
+                />
+
+
+            <EditText
+                android:id="@+id/TxtAdminInsertCorreo"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+
+                android:drawableLeft="@drawable/ic_email"
+
+                android:hint="E-mail"
+                android:inputType="textWebEmailAddress"
+
+                />
+
+            <Button
+
+                android:background="@drawable/designbtnline"
+                android:id="@+id/BtnAdminSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Guardar" />
+
+            <Button
+
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/desingbtnrelleno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</FrameLayout>

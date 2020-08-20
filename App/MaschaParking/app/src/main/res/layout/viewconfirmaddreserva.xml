@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:background="@drawable/designcontentprogress"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+        <TextView
+        android:padding="3dp"
+        android:id="@+id/titleProgress"
+        style="@style/progresTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Confirmación de ingreso"
+
+        android:background="@drawable/designtitleprogress"/>
+    <TextView
+        android:fontFamily="@font/gothicbold"
+        android:textSize="15dp"
+        android:id="@+id/ConfirmAddRes"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Este vehículo ha realizado una reservación"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="3mm"
+            android:paddingRight="3mm"
+            >
+
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/ConfirmAddNombre"
+        style="@style/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No está asociada esta placa"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/ConfirmAddPlaca"
+        style="@style/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placa"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/ConfirmAddHora"
+        style="@style/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora de llegada"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/ConfirmAddHoraBtnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/designbtnline"
+        android:text="ACEPTAR"
+        android:layout_marginBottom="15dp"/>
+
+
+    <Button
+        android:id="@+id/ConfirmAddHoraBtnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/desingbtnrelleno"
+        android:text="Cancelar"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

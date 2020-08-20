@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewInicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".inicioSesionActivity"
+    android:background="@color/ColorBackGround">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/logo"  />
+
+
+            <EditText
+                android:id="@+id/LoginTxtUser"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gothicbolditalic"
+                android:hint="Usuario"
+                android:inputType="number"
+                android:paddingLeft="2mm" />
+
+
+            <EditText
+                android:id="@+id/LoginTxtPswd"
+                style="@style/txt"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gothicbolditalic"
+                android:hint="Contraseña"
+                android:inputType="text"
+                android:paddingLeft="2mm" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gothicbolditalic"
+                android:text="Recordar Usuario y Contraseña"
+                android:textColor="@color/ColorIconEditText" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/loginBtnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/designbtnline"
+                android:enabled="true"
+                android:onClick="login"
+                android:text="Ingresar" />
+
+
+            <Button
+                android:id="@+id/loginBtnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/desingbtnrelleno"
+                android:text="Registrarse"
+                android:onClick="register"/>
+
+            <TextView
+               android:onClick="recover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/gothicbolditalic"
+                android:gravity="center"
+                android:text="¿Olvidó su contraseña?"
+                android:textSize="15dp"
+                android:layout_marginBottom="25dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

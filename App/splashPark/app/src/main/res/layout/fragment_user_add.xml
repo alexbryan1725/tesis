@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.UserAddFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5mm">
+
+
+            <EditText
+                android:id="@+id/TxtUserInsertCed"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_credit_card"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:hint="Cédula"
+                android:paddingLeft="5dp"
+
+                android:textColor="@color/EditTexColor" />
+
+
+            <EditText
+                android:id="@+id/TxtUserInsertNombres"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:hint="Nombres"
+                android:paddingLeft="5dp"
+
+                android:textColor="@color/EditTexColor" />
+
+
+            <EditText
+                android:id="@+id/TxtUserInsertApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:hint="Apellidos"
+                android:paddingLeft="5dp"
+
+                android:textColor="@color/EditTexColor" />
+
+
+            <EditText
+                android:id="@+id/TxtUserInsertTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:hint="Teléfono"
+                android:paddingLeft="5dp"
+
+                android:textColor="@color/EditTexColor" />
+
+
+            <EditText
+                android:id="@+id/TxtUserInsertdirec"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:hint="Dirección"
+                android:paddingLeft="5dp"
+
+                android:textColor="@color/EditTexColor" />
+
+
+            <EditText
+                android:id="@+id/TxtUserInsertCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/iconEditTexColor"
+                android:gravity="center_vertical"
+                android:hint="E-mail"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTexColor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext">
+            <Spinner
+
+
+                android:id="@+id/SpinerUserInsert"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:autofillHints="ddd"
+
+                />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/BtnUserSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/BtnUserCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

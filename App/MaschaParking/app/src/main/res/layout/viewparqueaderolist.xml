@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1mm"
+        android:layout_marginTop="1mm"
+        android:layout_marginRight="1mm"
+        android:background="@drawable/designbtnline"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nombreListParq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gothicbold"
+                        android:gravity="center"
+                        android:text="Prueba Parqueadero 1"
+                        android:textColor="@color/colorLabels" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/irListParq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:src="@drawable/pointred"
+                            android:id="@+id/imgListParq"
+
+                            android:layout_margin="1.5mm"
+                            android:layout_width="10mm"
+                            android:layout_height="10mm"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/direccionListParq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2.5dp"
+                            android:fontFamily="@font/gothic"
+                            android:text="Direccion del Parqueadero"
+                            android:textColor="@color/colorLabels" />
+
+                        <TextView
+                            android:id="@+id/telefonoListParq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2.5dp"
+                            android:fontFamily="@font/gothic"
+                            android:text="0000000000"
+                            android:textColor="@color/colorLabels" />
+
+                        <TextView
+                            android:id="@+id/plazaListParq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gothicbolditalic"
+                            android:gravity="center"
+                            android:text="Disponibles :    00/00"
+                            android:textColor="@color/colorLabels"
+
+                            />
+
+
+                    </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_icons_bolsa_de_dinero"
+                            android:tint="@color/ColorGold" />
+
+                        <TextView
+                            android:id="@+id/precioListParq"
+                            style="@style/texto"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="$ 0.99"
+                            android:textColor="@android:color/holo_green_light" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

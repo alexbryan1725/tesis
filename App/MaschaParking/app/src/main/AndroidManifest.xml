@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".FragmentsCliente.ClienteReservaActivity"></activity>
+
         <activity
             android:name=".UserAdminActivity"
             android:label="@string/title_activity_user_admin"
@@ -52,20 +52,23 @@
         <activity
             android:name=".MapsAddParqActivity"
             android:label="@string/title_activity_maps_add_parq" />
+
         <activity
             android:name=".AdminMenuActivity"
             android:label="@string/title_activity_admin_menu"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".inicioSesionActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
+
+
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

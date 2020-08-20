@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import static java.lang.Thread.sleep;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        TextView textView;
+        ProgressBar textView;
         ImageView logo;
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Animation animacion1= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_arriba);
         Animation animacion2= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_abajo);
-        textView = (TextView)findViewById(R.id.logoTextView);
+        textView = (ProgressBar)findViewById(R.id.logoTextView);
         logo = (ImageView) findViewById(R.id.logoImageView);
 
         textView.setAnimation(animacion2);
@@ -45,14 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
 
             }
-        }, 400);
-
-
-        try {
-            sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        }, 3000);
 
 
     }
